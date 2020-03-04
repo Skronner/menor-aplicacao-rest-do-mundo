@@ -10,22 +10,22 @@ import javax.persistence.Id;
 
 
 @Entity
-//@Table(name = "pessoa")
+
 public class Pessoa implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column /*(name="id")*/
+    @Column 
     private Integer Id;
 
-    @Column /*(name = "chave")*/
+    @Column 
     private String chave;
 
-    @Column /*(name = "nome")*/
+    @Column 
     private String nome;
 
-    @Column /*(name="idade")*/
+    @Column 
     private Integer idade;
 
     public Integer getId() {
